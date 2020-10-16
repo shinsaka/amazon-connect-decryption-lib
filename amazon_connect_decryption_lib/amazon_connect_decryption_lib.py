@@ -51,4 +51,3 @@ class AmazonConnectEncryptClient(EncryptionSDKClient):
         kwargs.setdefault('commitment_policy', CommitmentPolicy.REQUIRE_ENCRYPT_ALLOW_DECRYPT)
 
         return super().__new__(cls, **kwargs)
-
