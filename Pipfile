@@ -1,0 +1,14 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+moto = {extras = ["ssm"], version = "*"}
+
+[packages]
+aws-encryption-sdk = ">=2.0.0"
+boto3 = ">=1.15.16"
+
+[requires]
+python_version = "3.8"
