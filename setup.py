@@ -15,7 +15,7 @@ def read(*args):
 
 def get_version():
     """Reads the version from this module."""
-    init = read('src', '__init__.py')
+    init = read('amazon_connect_decryption_lib', '__init__.py')
     return VERSION_RE.search(init).group(1)
 
 
@@ -26,16 +26,16 @@ def get_requirements():
 
 
 setup(
-    name='ac-dencryption-lib',
+    name='amazon-connect-decryption-lib',
+    packages=find_packages(),
     version=get_version(),
-    url='https://github.com/shinsaka/amazon-connect-dencryption-lib',
+    url='https://github.com/shinsaka/amazon-connect-decryption-lib',
     author='shinsaka',
     author_email='shinx1265@gmail.com',
     maintainer='shinsaka',
     maintainer_email='shinx1265@gmail.com',
-    description='Amazon Connect Dencryption Library for Python',
+    description='Amazon Connect Decryption Library for Python',
     long_description=read('README.rst'),
-    packages=find_packages(),
     install_requires=get_requirements(),
     license='MIT',
     classifiers=[
