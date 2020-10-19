@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 moto = {extras = ["ssm"], version = "*"}
+twine = "*"
 
 [packages]
 aws-encryption-sdk = ">=2.0.0"
