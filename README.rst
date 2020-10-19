@@ -6,7 +6,7 @@ Required
 ========
 
 * Python 3.8+
-* aws-encryption-sdk
+* https://github.com/aws/aws-encryption-sdk-python/
 * boto3
 
 Install
