@@ -36,6 +36,7 @@ setup(
     maintainer_email='shinx1265@gmail.com',
     description='Amazon Connect Decryption Library for Python',
     long_description=read('README.rst'),
+    long_description_content_type='text/x-rst',
     install_requires=get_requirements(),
     license='MIT',
     classifiers=[
