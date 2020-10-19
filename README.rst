@@ -32,10 +32,28 @@ Usage
     print(plain_text)  # output is 112344567789
 
 
+Usage with AWS Lambda
+======================
+
+.. code-block:: python
+
+    from amazon_connect_decryption_lib import decrypt
+
+    def lambda_handler(event, context):
+        ssm_parameter_name = 'CONNECT_INPUT_DECRYPTION_KEY'
+        encrypted_text = event['Details']['ContactData']['Attributes']['EncryptedNumber']  # EncryptedNumber is your contact attribute name.
+
+        plain_text = decrypt(ssm_parameter_name, encrypted_text)
+        print(plain_text)
+
+        return {'DecryptResult': plain_text }
+
+
 Test(for Developer)
-===================
+====================
 
 .. code-block::
 
     $ python -m unittest
+
 
