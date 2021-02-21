@@ -2,6 +2,9 @@
 amazon-connect-dencryption-lib
 ==============================
 
+.. image:: https://pepy.tech/badge/amazon-connect-decryption-lib
+   :target: https://pepy.tech/project/amazon-connect-decryption-lib
+
 Required
 ========
 
